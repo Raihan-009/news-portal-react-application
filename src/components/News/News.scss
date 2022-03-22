@@ -1,0 +1,21 @@
+@import "../breakpoints/breakpoints.scss";
+
+.card-portion {
+  padding: 1rem;
+  height: 500px;
+}
+
+.card-img {
+  width: 415px;
+  height: 265px;
+  @include media("<=sm") {
+    width: 100%;
+  }
+}
+
+.blue-text {
+  color: blue;
+}
+a {
+  text-decoration: none;
+}
