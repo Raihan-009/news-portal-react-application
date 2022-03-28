@@ -16,7 +16,7 @@ const Topheadline = () => {
     <div className="row">
       {articles.map((article) => (
         <div className="col-sm-4 col-12 mb-3">
-          <News article={article} key={null}></News>
+          <News article={article}></News>
         </div>
       ))}
     </div>

@@ -3,15 +3,8 @@ import { Card } from "react-bootstrap";
 import "./News.scss";
 
 const News = (props) => {
-  console.log(props.article);
+  // console.log(props.article);
   const { title, description, urlToImage, url } = props.article;
-
-  let descript = description;
-  console.log(descript);
-  if (descript.length > 150) {
-    descript = description.substring(0, 150);
-  }
-  console.log(descript);
 
   return (
     <div>
@@ -20,7 +13,7 @@ const News = (props) => {
         <Card.Body>
           <Card.Title>{title}</Card.Title>
           <Card.Text className="">
-            {descript}
+            {description}
             <a href={url}>
               <span className="blue-text"> see more</span>
             </a>
